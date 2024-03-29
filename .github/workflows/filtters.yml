@@ -7,9 +7,9 @@ on:
       - 'feat/**' #feat/add...
     #branches-ignore: 
     #  - 'dev-test*'
-    paths: 
-      - 'src/**'
-      - 'public/**'
+  #  paths: 
+  #    - 'src/**'
+ #    - 'public/**'
     #paths-ignore: 
     #  - 'public/**.json'
 jobs:
