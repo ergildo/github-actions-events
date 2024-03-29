@@ -1,0 +1,21 @@
+name: Print Events
+on:
+  pull_request: 
+    types: opened
+    branches:
+      - main
+      - 'dev-*' #dev-add...
+      - 'feat/**' #feat/add...
+    branches-ignore: 
+      - 'dev-test*'
+    paths: 
+      - 'src/**'
+      - 'public/**'
+    paths-ignore: 
+      - 'public/**.json'
+jobs:
+  output-event:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Event
+        run: echo "${{toJSON(github.event)}}"
