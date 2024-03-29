@@ -4,14 +4,14 @@ on:
     types: 
       - opened 
     branches:
-      - main
+      - master
       - 'dev-*' #dev-add...
       - 'feat/**' #feat/add...
     #branches-ignore: 
     #  - 'dev-test*'
-  #  paths: 
-  #    - 'src/**'
- #    - 'public/**'
+    paths: 
+      - 'test/*'
+      - 'src/**'
     #paths-ignore: 
     #  - 'public/**.json'
 jobs:
