@@ -1,15 +1,17 @@
 name: Print Events
 on:
-  push: 
+  pull_request: 
+    types: 
+      - opened 
     branches:
-      - main
+      - master
       - 'dev-*' #dev-add...
       - 'feat/**' #feat/add...
     #branches-ignore: 
     #  - 'dev-test*'
     paths: 
+      - 'test/*'
       - 'src/**'
-      - 'public/**'
     #paths-ignore: 
     #  - 'public/**.json'
 jobs:
