@@ -6,13 +6,13 @@ on:
       - main
       - 'dev-*' #dev-add...
       - 'feat/**' #feat/add...
-    branches-ignore: 
-      - 'dev-test*'
+    #branches-ignore: 
+    #  - 'dev-test*'
     paths: 
       - 'src/**'
       - 'public/**'
-    paths-ignore: 
-      - 'public/**.json'
+    #paths-ignore: 
+    #  - 'public/**.json'
 jobs:
   output-event:
     runs-on: ubuntu-latest
